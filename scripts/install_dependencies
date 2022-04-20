@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Pulling dependencies"
+sudo service docker start
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 684545393748.dkr.ecr.ap-south-1.amazonaws.com
+docker pull 684545393748.dkr.ecr.ap-south-1.amazonaws.com/herb-payroll-ui:latest

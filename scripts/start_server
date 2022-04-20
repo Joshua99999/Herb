@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d -p 80:80 --name herb-payroll-ui 684545393748.dkr.ecr.ap-south-1.amazonaws.com/herb-payroll-ui:latest
